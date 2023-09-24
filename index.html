@@ -28,7 +28,7 @@
 
         .btn-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 10px;
         }
 
@@ -53,22 +53,24 @@
         <input type="text" id="result" readonly>
         <div class="btn-container">
             <button class="btn" onclick="clearResult()">C</button>
+            <button class="btn" onclick="appendToResult('(')">(</button>
+            <button class="btn" onclick="appendToResult(')')">)</button>
             <button class="btn" onclick="appendToResult('%')">%</button>
-            <button class="btn" onclick="appendToResult('/')">/</button>
             <button class="btn" onclick="appendToResult('7')">7</button>
             <button class="btn" onclick="appendToResult('8')">8</button>
             <button class="btn" onclick="appendToResult('9')">9</button>
+            <button class="btn" onclick="appendToResult('/')">/</button>
             <button class="btn" onclick="appendToResult('4')">4</button>
             <button class="btn" onclick="appendToResult('5')">5</button>
             <button class="btn" onclick="appendToResult('6')">6</button>
+            <button class="btn" onclick="appendToResult('*')">*</button>
             <button class="btn" onclick="appendToResult('1')">1</button>
             <button class="btn" onclick="appendToResult('2')">2</button>
             <button class="btn" onclick="appendToResult('3')">3</button>
-            <button class="btn" onclick="appendToResult('-')">-</button>
             <button class="btn" onclick="appendToResult('+')">+</button>
-            <button class="btn" onclick="appendToResult('*')">*</button>
             <button class="btn" onclick="appendToResult('0')">0</button>
             <button class="btn" onclick="appendToResult('.')">.</button>
+            <button class="btn" onclick="appendToResult('-')">-</button>
             <button class="btn" onclick="calculateResult()">=</button>
         </div>
     </div>
@@ -93,3 +95,4 @@
     </script>
 </body>
 </html>
+
